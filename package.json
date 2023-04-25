@@ -1,0 +1,30 @@
+{
+  "name": "find-my-jobs",
+  "version": "1.0.0",
+  "description": "Help in posting and editing jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkstellar16/Find-My-Jobs.git"
+  },
+  "author": "Shubham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkstellar16/Find-My-Jobs/issues"
+  },
+  "homepage": "https://github.com/darkstellar16/Find-My-Jobs#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.5",
+    "mongoose-unique-validator": "^4.0.0",
+    "unique": "^0.0.1",
+    "validator": "^13.9.0"
+  }
+}
