@@ -1,6 +1,6 @@
 require("dotenv").config;
 
-const userInfo = require("../../models/user.js");
+const userInfo = require("../../models/userModel.js");
 
 const jwt = require("jsonwebtoken");
 
@@ -16,7 +16,7 @@ const loginData = async (req, res) => {
         const user = await userInfo.findOne({ email });
         if (user && (await bcrypt.compare(password, user.password))) {
 
-            const token = jwt.sign({ email, password }, process.env.SECRET_KEY, { expiresIn: "2h" })
+            const token = jwt.sign({ email, password }, process.env.SECRET_KEY, { expiresIn: "6h" })
             console.log(token);
             user.token = token;
             return res.status(200).json({ user });

@@ -7,7 +7,4 @@ const loginData = require("../../controller/login/login.js");
 
 route.post('/', loginData);
 
-
-
-
 module.exports = route;
