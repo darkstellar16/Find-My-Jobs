@@ -41,7 +41,7 @@ const jobSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    skils: {
+    skills: {
         type: Array,
         required: true
     }
